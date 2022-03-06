@@ -17,7 +17,7 @@ This file contains the initial data transformation and exploratory data analysis
 * **5. Development of Final Working Dataset B - Principal Component Analysis (PCA)**: Transformation of the working dataset with principal components to reduce dimensionality.
 
 There are 4 outputs from this file (saved in the same GitHub folder):
-* **1. Raw Dataset Profile.html**: The pandas profile of the raw dataset.
+* **1_Raw Dataset Profile.html**: The pandas profile of the raw dataset.
 * **2. Transformed Dataset Profile.html**: The pandas profile of the transformed dataset.
 * **3a. Working Dataset.csv**: The working dataset.
 * **3b. Working Dataset - PCA.csv**: The working dataset with principal components to reduce dimensionality.
@@ -31,9 +31,9 @@ This file contains several random forest classification models, using the workin
   * **2.2 Grid Search with Cross Validation**: A grid search to test multiple combination of parameter values, chosen based on the results of the random search.
 * **3. All Features in Working Dataset, Using Parameters from Grid Search - Evaluation using Repeated 10-fold Cross Validation**: Evaluation of the model using best combination of parameters previously identified in section 2.
 * **4A. Selected Features - Filter Method**: Identification of the most important features, testing to see best number of features to use, then finally an evaluation of the model using repeated 10-fold cross validation. The model uses the best combination of parameters previously identified during hyperparameter tuning.
-  * **4A.1 Top 20 Features Ranked by Importance**: Visualizing the importance of the top 20 features.
-  * **4A.2 Top 1 to 10 Features - Filter Method**: Investigation of the best number of features to use by obtaining Recall scores using 1 to 10 features.
-  * **4A.3 Top 5 Features, Filter Method - Evaluation using Repeated 10-fold Cross Validation**: Evaluation of the model with the best number of features previously identified, using repeated 10-fold cross validation.
-* **4B. 5 Selected Features using Recursive Feature Elimination (RFE) - Wrapper Method**: Evaluation of a random forect classification model that uses RFE for feature selection, using the best number of features previously identified and the best combination of parameters previously identified during hyperparameter tuning. Evaluation is performed using repeated 10-fold cross validation.
+  * **4A.1 Top Features Ranked by Importance**: Visualizing the importance of features.
+  * **4A.2 Top 1 to 20 Features - Filter Method**: Investigation of the best number of features to use by obtaining Recall scores using 1 to 20 features.
+  * **4A.3 Top 11 Features, Filter Method - Evaluation using Repeated 10-fold Cross Validation**: Evaluation of the model with the best number of features previously identified, using repeated 10-fold cross validation.
+* **4B. 11 Selected Features using Recursive Feature Elimination (RFE) - Wrapper Method**: Evaluation of a random forect classification model that uses RFE for feature selection, using the best number of features previously identified and the best combination of parameters previously identified during hyperparameter tuning. Evaluation is performed using repeated 10-fold cross validation.
 * **5. Comparison of Models**: Identification of the best model from the final ones developed in sections 1, 3, 4A, and 4B.
 * **6. Stability of Best Model by Varying k-folds for Cross Validation**: Investigation of stability of the best model by obtaining Recall scores from cross validation using 3 to 15 folds.
