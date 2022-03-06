@@ -2,15 +2,29 @@
 
 Link to Statistic Canada's "Impacts of COVID-19 on Health Care Workers: Infection Prevention and Control, Public Use Microdata File", containing the original dataset and associated documentation: https://www150.statcan.gc.ca/n1/pub/13-25-0004/132500042021001-eng.htm
 
+
 ## 1_Data_Transformation_&_EDA.ipynb
-This file contains the initial data transformation and exploratory data analysis (EDA) of the raw dataset. There are 4 outputs from this file:
+This file contains the initial data transformation and exploratory data analysis (EDA) of the raw dataset. The file is split into multiple sections:
+* **1. Preliminary Exploratory Data Analysis (EDA)**: Creation of the pandas profile of the raw dataset.
+* **2. Data Transformation**
+* **3. EDA**
+  * **3.1 Univariate Analysis**: Creation of the pandas profile of the transformed dataset.
+  * **3.2 Bivariate Analysis: Correlation Analysis**: Analysis of correlations between variables, both against the target variable and also each other.
+* **4. Development of Final Working Dataset A - Original Features**: Creation of the working dataset.
+  * **4.1 Initial Feature Selection**: Initial analysis and removal of features from the dataset.
+  * **4.2 One-Hot Key Encoding**: Applied to nominal categorical variables.
+  * **4.3 Save Working Dataset A**
+* **5. Development of Final Working Dataset B - Principal Component Analysis (PCA)**: Transformation of the working dataset with principal components to reduce dimensionality.
+
+There are 4 outputs from this file (saved in the same GitHub folder):
 * **1. Raw Dataset Profile.html**: The pandas profile of the raw dataset.
 * **2. Transformed Dataset Profile.html**: The pandas profile of the transformed dataset.
 * **3a. Working Dataset.csv**: The working dataset.
 * **3b. Working Dataset - PCA.csv**: The working dataset with principal components to reduce dimensionality.
 
+
 ## 4_Random_Forest_Classification_Models.ipynb
-This file contains several random forest classification models. The file is split into multiple sections:
+This file contains several random forest classification models, using the working dataset obtained from '1_Data_Transformation_&_EDA.ipynb'. The file is split into multiple sections:
 * **1. All Features in Working Dataset - Evaluation using Train-Test Split**: A random forest classification model, using package defaults, and no feature selection.
 * **2. All Features in Working Dataset - Hyperparameter Tuning**: Identification of best combination of parameters for the random forest classification model.
   * **2.1 Random Search with Cross Validation**: A random search to narrow down possible parameter values.
