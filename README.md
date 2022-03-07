@@ -37,3 +37,16 @@ This file contains several random forest classification models, using the workin
 * **4B. 7 Selected Features using Recursive Feature Elimination (RFE) - Wrapper Method**: Evaluation of a random forect classification model that uses RFE for feature selection. Initially, the best number of features previously identified was used (11), along with best combination of parameters previously identified during hyperparameter tuning. However, computational time was significant, and the model had to be adjusted. Final evaluation was performed using repeated 5-fold cross validation.
 * **5. Comparison of Models**: Identification of the best model from the final ones developed in sections 1, 3, 4A, and 4B.
 * **6. Stability of Best Model by Varying k-folds for Cross Validation**: Investigation of stability of the best model by obtaining Recall scores from cross validation using 3 to 15 folds.
+
+
+## A. Combined Technical Reports
+HTML file of ipynb files combined.
+
+
+## Pending Files Not Yet Uploaded
+The following files are still in progress and will be uploaded at a later date:
+  * 4a_Random_Forest_Classification_Models_PCA.ipynb
+  * 5_SVM_Classification_Models.ipynb
+  * 5a_SVM_Classification_Models_PCA.ipynb
+  * 6_XGBoost_Classification_Models.ipynb
+  * 6a_XGBoost_Classification_Models_PCA.ipynb
