@@ -40,10 +40,10 @@ This file contains several random forest classification models, using the workin
 
 
 ## A. Combined Technical Reports
-HTML file of ipynb files combined.
+HTML file of ipynb files combined (1_Data_Transformation_&_EDA.ipynb & 4_Random_Forest_Classification_Models.ipynb).
 
 
-## Pending Files Not Yet Uploaded
+## Files Still in Progress
 The following files are still in progress and will be uploaded at a later date:
   * 4a_Random_Forest_Classification_Models_PCA.ipynb
   * 5_SVM_Classification_Models.ipynb
