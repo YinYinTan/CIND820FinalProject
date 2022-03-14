@@ -24,7 +24,7 @@ There are 4 outputs from this file (saved in the same GitHub folder):
 
 
 ## 4_Random_Forest_Classification_Models.ipynb
-This file contains several random forest classification models, using the working dataset obtained from '1_Data_Transformation_&_EDA.ipynb'. The file is split into multiple sections:
+This file contains several random forest classification models, using the working dataset obtained from '1_Data_Transformation_&_EDA.ipynb' (i.e. 3a. Working Dataset.csv). The file is split into multiple sections:
 * **1. All Features in Working Dataset - Evaluation using Train-Test Split**: A random forest classification model, using package defaults, and no feature selection.
 * **2. All Features in Working Dataset - Hyperparameter Tuning**: Identification of best combination of parameters for the random forest classification model.
   * **2.1 Random Search with Cross Validation**: A random search to narrow down possible parameter values.
