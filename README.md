@@ -58,19 +58,6 @@ This file contains several random forest classification models, using the workin
 * **5. Comparison of Models**: Identification of the best model from the final ones developed in sections 1, 3, 4A, and 4B.
 * **6. Stability of Best Model by Varying k-folds for Cross Validation**: Investigation of stability of the best model by obtaining Recall scores from cross validation using 3 to 15 folds.
 
-## 4a_Random_Forest_Classification_Models_PCA.ipynb
-This file contains several random forest classification models, using the working dataset with principal components obtained from '1_Data_Transformation_&_EDA.ipynb' (i.e. 3b. Working Dataset - PCA.csv). The file is split into multiple sections:
-* **1. All Principal Components in Working Dataset - Evaluation using Train-Test Split**: A random forest classification model, using package defaults, and all principal components.
-* **2. All Principal Components in Working Dataset - Hyperparameter Tuning**: Identification of best combination of parameters for the random forest classification model.
-  * **2.1 Random Search with Cross Validation**: A random search to narrow down possible parameter values.
-  * **2.2 Grid Search with Cross Validation**: A grid search to test multiple combination of parameter values, chosen based on the results of the random search.
-* **3. All Principal Components in Working Dataset, Using Parameters from Grid Search - Evaluation using Repeated 10-fold Cross Validation**: Evaluation of the model using best combination of parameters previously identified in section 2.
-* **4. Top Principal Components**: Building a model using a select number of principal components.
-  * **4.1 Top 1 to 20 Principal Components**: Investigation of the number of principal components to use by obtaining Recall scores using 1 to 20 principal components.
-  * **4.2 Top 17 Principal Components - Evaluation using Repeated 10-fold Cross Validation**: Evaluation of the model with the ideal number of principal components previously identified, using repeated 10-fold cross validation and the best combination of parameters previously identified during hyperparameter tuning.
-* **5. Comparison of Models**: Identification of the best model from the final ones developed in sections 1, 3, and 4.
-* **6. Stability of Best Model by Varying k-folds for Cross Validation**: Investigation of stability of the best model by obtaining Recall scores from cross validation using 3 to 15 folds.
-
 ## 5_SVM_Classification_Models.ipynb
 This file contains several SVM classification models, using the working dataset obtained from '1_Data_Transformation_&_EDA.ipynb' (i.e. 3a. Working Dataset.csv). The file is split into multiple sections:
 * **1. All Features in Working Dataset - Evaluation using Train-Test Split**: A SVM classification model, using package defaults, and no feature selection.
@@ -83,6 +70,34 @@ This file contains several SVM classification models, using the working dataset 
   * **4.2 Top 25 Features, Filter Method - Evaluation using Repeated 10-fold Cross Validation**: Evaluation of the model with the best number of features previously identified, using repeated 10-fold cross validation and the best combination of parameters previously identified during hyperparameter tuning.
 * **5. Comparison of Models**: Identification of the best model from the final ones developed in sections 1, 3, 4A, and 4B.
 * **6. Stability of Best Model by Varying k-folds for Cross Validation**: Investigation of stability of the best model by obtaining Recall scores from cross validation using 5 to 12 folds.
+
+## 6_XGBoost_Classification_Models.ipynb
+This file contains several XGBoost classification models, using the working dataset obtained from '1_Data_Transformation_&_EDA.ipynb' (i.e. 3a. Working Dataset.csv). The file is split into multiple sections:
+* **1. All Features in Working Dataset - Evaluation using Train-Test Split**: A XGBoost classification model, using package defaults, and no feature selection.
+* **2. All Features in Working Dataset - Hyperparameter Tuning**: Identification of best combination of parameters for the XGBoost classification model.
+  * **2.1 Random Search with Cross Validation**: A random search to narrow down possible parameter values.
+  * **2.2 Grid Search with Cross Validation**: A grid search to test multiple combination of parameter values, chosen based on the results of the random search.
+* **3. All Features in Working Dataset, Using Parameters from Grid Search - Evaluation using Repeated 10-fold Cross Validation**: Evaluation of the model using best combination of parameters previously identified in section 2.
+* **4A. Selected Features - Filter Method**: Identification of the most important features, testing to see best number of features to use, then finally an evaluation of the model using repeated 10-fold cross validation. The model uses the best combination of parameters previously identified during hyperparameter tuning.
+  * **4A.1 Top Features Ranked by Importance**: Visualizing the importance of features.
+  * **4A.2 Top 1 to 21 Features - Filter Method**: Investigation of the best number of features to use by obtaining Recall scores using 1 to 21 features.
+  * **4A.3 Top 6 Features, Filter Method - Evaluation using Repeated 10-fold Cross Validation**: Evaluation of the model with the best number of features previously identified, using repeated 10-fold cross validation.
+* **4B. 6 Selected Features using Recursive Feature Elimination (RFE) - Wrapper Method**: Evaluation of a XGBoost classification model that uses RFE for feature selection. The best number of features previously identified was used, along with best combination of parameters previously identified during hyperparameter tuning. However, computational time was significant, and full evaluation the model could not be completed.
+* **5. Comparison of Models**: Identification of the best model from the final ones developed in sections 1, 3, and 4A.
+* **6. Stability of Best Model by Varying k-folds for Cross Validation**: Investigation of stability of the best model by obtaining Recall scores from cross validation using 5 to 12 folds.
+
+## 4a_Random_Forest_Classification_Models_PCA.ipynb
+This file contains several random forest classification models, using the working dataset with principal components obtained from '1_Data_Transformation_&_EDA.ipynb' (i.e. 3b. Working Dataset - PCA.csv). The file is split into multiple sections:
+* **1. All Principal Components in Working Dataset - Evaluation using Train-Test Split**: A random forest classification model, using package defaults, and all principal components.
+* **2. All Principal Components in Working Dataset - Hyperparameter Tuning**: Identification of best combination of parameters for the random forest classification model.
+  * **2.1 Random Search with Cross Validation**: A random search to narrow down possible parameter values.
+  * **2.2 Grid Search with Cross Validation**: A grid search to test multiple combination of parameter values, chosen based on the results of the random search.
+* **3. All Principal Components in Working Dataset, Using Parameters from Grid Search - Evaluation using Repeated 10-fold Cross Validation**: Evaluation of the model using best combination of parameters previously identified in section 2.
+* **4. Top Principal Components**: Building a model using a select number of principal components.
+  * **4.1 Top 1 to 20 Principal Components**: Investigation of the number of principal components to use by obtaining Recall scores using 1 to 20 principal components.
+  * **4.2 Top 17 Principal Components - Evaluation using Repeated 10-fold Cross Validation**: Evaluation of the model with the ideal number of principal components previously identified, using repeated 10-fold cross validation and the best combination of parameters previously identified during hyperparameter tuning.
+* **5. Comparison of Models**: Identification of the best model from the final ones developed in sections 1, 3, and 4.
+* **6. Stability of Best Model by Varying k-folds for Cross Validation**: Investigation of stability of the best model by obtaining Recall scores from cross validation using 3 to 15 folds.
 
 ## 5a_SVM_Classification_Models_PCA.ipynb
 This file contains several SVM classification models, using the working dataset with principal components obtained from '1_Data_Transformation_&_EDA.ipynb' (i.e. 3b. Working Dataset - PCA.csv). The file is split into multiple sections:
@@ -112,6 +127,3 @@ This file contains several XGBoost classification models, using the working data
 
 ## A. Combined Technical Reports
 HTML file of the 7 Jupyter notebooks combined.
-
-## Files Still in Progress
-  * 6_XGBoost_Classification_Models.ipynb
